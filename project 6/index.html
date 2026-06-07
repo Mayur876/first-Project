@@ -46,13 +46,90 @@
     <td><label for="React">React</label></td>
     <br><br>
     <td><label for="Select course">Select course:</label></td>
-    
-   <select name="" id="">
-    <option value="">hello</option>
-    </select>
-    
+        <select name="" id="">
+            <option value="">hello</option>
+            <option valu="">other</option>
+            <option valu="">css</option>
+            <option valu="">IT</option>
+        </select>
+        <br><br>
+    <td><label for="FeedBack">FeedBack</label></td>
+    <br>
+    <textarea cols="50" placeholder="Write your feedback here..."></textarea>
+    <br><br>
+    <button type="Submit">Submit</button>
+    <button type="Reset">Reset</button>
+    <hr>
+
      </tr>
     </form>
+        <tr><td><h2><label for="Student Details table">Student Details table</label></h2></td></tr>
+        <head>
+            <style>
+              table, th, td{ 
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 5px;
+                text-align: left;
+            }
+            </style>
+        </head>
+        <table >
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Course</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ali</td>
+                    <td>ali@gmail.com</td>
+                    <td>Backend</td>
+                    <td>Pending</td>
+                </tr>
+                <tr>
+                    <td>Ahmed</td>
+                    <td>ahmed@gmail.com</td>
+                    <td>Backend</td>
+                    <td>Pending</td>
+                </tr>
+                <tr>
+                    <td>Fatima</td>
+                    <td>fatima@gmail.com</td>
+                    <td>Full Stack</td>
+                    <td>Active</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Total Registered Student: 3</td>
+                </tr>
+            </tfoot>
+        </table>
+        <h2>Advanced Table Example</h2>
+        <table>
+            <tr>
+                <th rowspan="2">Student</th>
+                <th colspan="2">Marks</th>
+            </tr>
+            <tr>
+                <th>HTML</th>
+                <TH>CSS</TH>
+            </tr>
+            <tr>
+                <td>Aqid</td>
+                <td>90</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>Ali</td>
+                <td>88</td>
+                <td>80</td>
+            </tr>
+        </table>
     
 </body>
 </html>

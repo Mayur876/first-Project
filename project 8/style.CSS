@@ -1,0 +1,44 @@
+#navbar,ul{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+#navbar{
+    background-color: navy;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    padding: 0% 10px;
+}
+ul{
+    gap: 30px;
+}
+#Zone{
+    color: rgb(234, 255, 5);
+}
+.card{
+    border: 2px solid rgba(25, 0, 0, 0.027);
+    width: 180px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.029);
+
+}
+#card-container{
+    margin-top: 20px;
+    display:flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+button{
+    width: 100%;
+    background-color: rgb(238, 164, 15);
+    color: white;
+    border: none;
+    padding: 10px;
+
+}
+img{
+    object-fit: contain;
+}

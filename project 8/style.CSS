@@ -1,7 +1,10 @@
-#navbar,ul{
+#navbar{
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content:space-between;
+}
+ul{
+    display: flex;
 }
 #navbar{
     background-color: navy;
@@ -42,4 +45,24 @@ button{
 }
 img{
     object-fit: contain;
+}
+
+@media (max-width:425px){
+    .card{
+        width: 100%;
+    }
+}
+
+@media (max-width:768px){
+    ul{
+        display: none;
+    }
+    #navbar{
+        justify-content: space-between;
+    }
+}
+@media (min-width:768px){
+    #ham{
+        display: none;
+    }
 }

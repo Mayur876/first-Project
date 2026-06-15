@@ -1,0 +1,14 @@
+<style>
+        html{
+            scroll-behavior: smooth;
+        }
+</style>
+<header class="header">
+        <nav class="navbar">
+            <a href="#home" class="nav-link"></a>
+            <a href="#services" class="nav-link"></a>
+            <a href="#about" class="nav-link"></a>
+            <a href="#contact" class="nav-link"></a>
+            <a href="#contact" class="nav-link"></a>
+        </nav>
+    </header>

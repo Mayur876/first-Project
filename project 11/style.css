@@ -16,6 +16,41 @@ body {
     height: 70vh;
     padding: 10px;
     color: white;
+    animation: heroAnimation 2s linear;
+}
+
+@keyframes heroAnimation{
+    from{
+        transform: translateY(-500px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.logo,.nav-links,.btn-plan, .hero-content{
+    opacity: 0;
+    animation-delay: 2s;
+    animation-name: textAnimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes textAnimation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.features{
+    opacity: 0;
+    animation-delay: 3s;
+    animation-name: textAnimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
 /* Navbar */
@@ -203,7 +238,7 @@ body {
     list-style: none;
 }
 
-.list-items li {
+.list-items p {
     font-size: 0.95rem;
     padding: 10px 0;
     border-bottom: 1px solid #f1f5f9;
@@ -213,7 +248,7 @@ body {
     color: #475569;
 }
 
-.text-green { hgghghfbghghfgfghfvvb bf ff fvbff fbv fb d cvhf 
+.text-green {
     color: #22c55e;
     width: 20px;
 }
@@ -229,14 +264,13 @@ body {
     display: flex;
     align-items: center;
     justify-content:space-between;
-    border-radius: ;
     padding: 10px 10px 10px 20px;
-    border-bottom: 1px solid rgba(230, 227, 227, 0.233); */
+    border-bottom: 1px solid rgba(230, 227, 227, 0.233);
 }
 /* Bottom Stats Bar */
 .stats-bar {
     background-color: #121b2e;
-    margin: 0px 10px 20px;
+    margin: 20px;
     padding: 25px 20px;
     border-radius: 12px;
     display: flex;
@@ -268,3 +302,7 @@ body {
 .green-text { color: #22c55e; }
 .blue-text { color: #38bdf8; }
 .red-text { color: #f43f5e; }
+
+#main{
+    width: 400px;
+}

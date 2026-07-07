@@ -16,7 +16,7 @@ body {
     height: 70vh;
     padding: 10px;
     color: white;
-    animation: heroAnimation 2s linear;
+    animation: heroAnimation 3s linear;
 }
 
 @keyframes heroAnimation{
@@ -30,9 +30,9 @@ body {
 
 .logo,.nav-links,.btn-plan, .hero-content{
     opacity: 0;
-    animation-delay: 2s;
+    animation-delay: 3s;
     animation-name: textAnimation;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
@@ -79,12 +79,12 @@ body {
     font-size: 0.95rem;
     padding-bottom: 5px;
 }
-.nav-links a.active, .nav-links a:hover {
+.nav-links a.active, .nav-links a:hover{
     color: white;
-    border-bottom: 2px solid #eab308;
+    border-bottom: 2px solid #eadb08;
 }
 .btn-plan {
-    background-color: #eab308;
+    background-color: #d0ea08;
     color: #1e293b;
     padding: 5px 15px;
     border-radius: 5px;

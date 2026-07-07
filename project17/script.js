@@ -173,7 +173,6 @@
 // let Age = 19
 // let marks = 85
 // let Course = "Science"
-
 // if(Age >=  && marks>=70){
 //     switch(Course){
 //         case "Science"

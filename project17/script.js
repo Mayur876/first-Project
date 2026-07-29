@@ -1,4 +1,7 @@
 
+    // Task 1: Personal Introductino
+
+
 // let name = "mayur";
 // console.log(`Hello, my name is ${name}`);
 
@@ -11,6 +14,8 @@
 // let isstudent = "true";
 // console.log(`student ${isstudent}.`);
 
+
+    //  Task 2: Basic Calculator
 
 // const num1 = 10
 // const num2 = 52

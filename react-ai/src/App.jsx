@@ -1,122 +1,137 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import "./App.css";
+import reactLogo from "./assets/react.svg";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+      
+      <nav className="navbar">
+        <div className="logo">
+          <img src={reactLogo} alt="React Logo" />
+          <h2>My First React App</h2>
         </div>
-        <div>
-          <h1>Get started</h1>
+
+        <ul className="menu">
+          <li className="active">Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="hero">
+        <h1>Welcome to React</h1>
+        <div className="line"></div>
+        <p>This is my first React application.</p>
+      </section>
+
+      <hr />
+
+      {/* About Section */}
+      <section className="about">
+        <div className="image-box">
+          <img src={reactLogo} alt="React" />
+        </div>
+
+        <div className="content">
           <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+            This is my first <b>React</b> project built using
+            <span className="purple"> Vite.</span>
+          </p>
+
+          <p>
+            React is a powerful JavaScript library for building user
+            interfaces.
+          </p>
+
+          <p>
+            Learning React is <mark>fun</mark> and exciting!
+          </p>
+
+          <p>
+            It is <b>important</b> to practice everyday.
+          </p>
+
+          <p>
+            Start building today and become
+            <span className="purple"> awesome</span> developer.
+          </p>
+
+          <p>
+            Make your concepts <u>strong</u> and journey
+            <span className="green"> successful.</span>
           </p>
         </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
       </section>
 
-      <div className="ticks"></div>
+      <hr />
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
+      {/* Topics */}
+      <section className="lists">
+        <div className="box">
+          <h2>📖 Topics I am Learning</h2>
+
           <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
+            <li>JSX</li>
+            <li>Vite</li>
+            <li>React</li>
+            <li>JavaScript</li>
+            <li>CSS</li>
           </ul>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
+
+        <div className="box">
+          <h2>📝 My Learning Steps</h2>
+
+          <ol>
+            <li>Install React</li>
+            <li>Learn JSX</li>
+            <li>Understand Basic Concepts</li>
+            <li>Build Projects</li>
+            <li>Become a React Developer</li>
+          </ol>
         </div>
       </section>
+      <hr />
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+      {/* Buttons */}
+      <section className="buttons">
+        <button className="btn purple-btn">Start Learning</button>
+        <button className="btn blue-btn">Learn More</button>
+        <button className="btn green-btn">Contact</button>
+      </section>
+
+      {/* Information */}
+      <section className="info">
+        <h2>👤 My Information</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Course</th>
+              <th>Batch</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Mayur Thokare</td>
+              <td>CSE</td>
+              <td>2026</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      {/* Footer */}
+      <footer>
+        <h2>💜</h2>
+        <p>© 2026 My First React Application</p>
+        <span>Keep Learning, Keep Growing! 🚀</span>
+      </footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
